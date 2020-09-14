@@ -1,7 +1,7 @@
-# Agribid
-# Agribid is a digital platform where digital farmers can show available produce and clients post bids as service providers .
-# clients under our system include : resturants, hotels and supermarkets .
-# farmers using our system  shall gain access to large market beyond their areas .
+
+#Agribid is a digital platform where digital farmers can show case available produce and clients post bids as service providers .
+clients under our system include: resturants, hotels and supermarkerts .
+farmers using our system shall gain access to large markert beyond their areas.
 •	Famers shall be able to  plan their seasons according to the market needs.
 •	Farmers shall easily connect to logistic companies.
 
