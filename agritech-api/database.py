@@ -13,21 +13,21 @@ class DatabaseConnection():
         :param host: 
         :param port: 
         """
-        self.conn_params = dict(
-            user = "postgres",
-            password = "viv",
-            host = "127.0.0.1",
-            port = "5432",
-            database = 'agriBid'
-            )
-
         # self.conn_params = dict(
-        #     user = "gmwejdgiawxwsn",
-        #     password = "d8f6c977ac22e089f08076452526b86ea4d5ce40b338e912ae2b256c50b96819",
-        #     host = "ec2-54-204-40-248.compute-1.amazonaws.com",
+        #     user = "postgres",
+        #     password = "viv",
+        #     host = "127.0.0.1",
         #     port = "5432",
-        #     database = 'dffbgb2dpdlbm5',
+        #     database = 'agriBid'
         #     )
+
+        self.conn_params = dict(
+            user = "qoautkrhnmydkn",
+            password = "28d862df91d560b6a42f64192041d31a4f38e985520365456d88b64776687b6e",
+            host = "ec2-107-20-15-85.compute-1.amazonaws.com",
+            port = "5432",
+            database = 'devnlmrno83i6e',
+            )
         
         self.connection = psycopg2.connect(**self.conn_params)                        
         self.connection.autocommit = True
