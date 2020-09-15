@@ -18,10 +18,8 @@ def token_required(f):
                 
         try:
             data = jwt.decode(token, app.config['SECRETE_KEY'], algorithms=['HS256'])
-            print(data['sub'],'data')
             current_user = data['sub']
             user = UserModel.get_user_by_id(current_user)
-            print(user,'user')
         except:
             return jsonify({"message":"Your session has expired, please login again"}),401
         return f(current_user, *args, **kwargs)

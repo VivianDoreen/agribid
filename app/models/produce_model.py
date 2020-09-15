@@ -29,7 +29,7 @@ class ProduceModel(object):
             query_to_search_product = "SELECT * FROM farmer_produce WHERE produce_name=%s"
             connection.cursor.execute(query_to_search_product, [self.produce_name])
             added_produce = connection.cursor.fetchone()
-            print("added_produce")
+            
             result = {
                         'id': added_produce[0],
                         'produce_name': added_produce[1],

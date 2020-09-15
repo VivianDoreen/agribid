@@ -45,6 +45,7 @@ def login():
         return jsonify({"message":"wrong params"})
     data = request.get_json() or {}
 
+    user = UserModel.check_if_is_valid_user(data['email'])
     if user == "user not found":
         return jsonify({'message':'Invalid username and password'}), 401
 
@@ -59,3 +60,4 @@ def login():
                 'loginstatus': "Login successful",
                 'x-access-token':generate_token(user[0])
                 }),200
+

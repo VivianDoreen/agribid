@@ -28,7 +28,7 @@ class UserModel():
                 row = connection.cursor.fetchone()
                 if not row:
                     return "No results to fetch"
-                print(row)
+              
                 response = {
                     'id':row[0],
                     'name':row[1], 
